@@ -6,7 +6,9 @@ Licensed under the Eiffel Forum License 2
 More info:
  * Jenni: https://github.com/myano/jenni/
  * Phenny: http://inamidst.com/phenny/
-This allows users to check if a website is up through http://downorisitjustme.com
+
+This module checks whether it's an odd or even week
+and displays which show is recording that weekend.
 """
 
 import datetime, re

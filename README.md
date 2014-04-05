@@ -1,7 +1,7 @@
 jenni-fortnight
 ===============
 
-fortnight - a simple jenni bot module to report  on whether it's the weekend for kpo or /dev/random
-
-This is a module for the jenni irc bot which reports
-one which show is on 'this' weekend.
+This is a module for the jenni irc bot which looks
+to see whether it's an odd or even week and then
+reports which of the two shows (kpo or /dev/random)
+would be on that week. 
