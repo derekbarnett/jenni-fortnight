@@ -1,7 +1,12 @@
 jenni-fortnight
 ===============
 
-This is a module for the jenni irc bot which looks
-to see whether it's an odd or even week and then
-reports which of the two shows (kpo or /dev/random)
-would be on that week. 
+There are two jenni modules in this repo: 
+fortnight.py - this module looks to see whether it
+               is an even or odd week of the year and
+               reports on which show is scheduled to
+               record that weekend
+
+nextshow.py - this module is check for the next show date
+              of a show which records on the first and third
+              fridays of the month
