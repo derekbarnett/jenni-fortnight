@@ -30,7 +30,7 @@ def weekcheck(jenni, t, generic):
 
     #get the date string for the showdate. we'll rewrite this later if we have to
     #look into future weeks
-    showdate = frcheck.strftime("%A %d, %B %Y")
+    showdate = frcheck.strftime("%A, %B %d, %Y")
     showmessage = "Something went wrong"
 
     #look for first week
@@ -79,7 +79,7 @@ def weekcheck(jenni, t, generic):
         while noshow:
             #add 1 week timedelta to frcheck until the friday falls in proper date range
             frcheck = frcheck + datetime.timedelta(weeks=1)
-            showdate = frcheck.strftime("%A %d, %B %Y")
+            showdate = frcheck.strftime("%A, %B %d, %Y")
             if frcheck.day >= 1 and frcheck.day <= 7:
                 if generic:
                     showmessage = "The next show is on " + showdate
@@ -110,7 +110,7 @@ def nextshow(jenni, input):
         generic = True
         gooddate = re.search('\/', check)
         if not gooddate:
-            return jenni.reply("Please enter '.sw YYYY/MM/DD' to check against a specific date.")
+            return jenni.reply("Please enter '.ns YYYY/MM/DD' to check against a specific date.")
         if gooddate:
             parts = check.split("/")
             y, m, d = 0, 0, 0
